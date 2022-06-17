@@ -9,13 +9,6 @@ jobs:
    steps:
     - name: Checkout repo
       uses: actions/checkout@v2 
-    - uses: pnpm/action-setup@v2.1.0
-      with:
-        version: 6.0.2
-    - name: install
-      run: pnpm install
-    - name: build
-      run: npm run build
     - name: deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
