@@ -6,4 +6,4 @@
 
 | 名称     | Live Demo                                                     | Notes        |
 | ------ | ------------------------------------------------------------- | ------------ |
-| tabbar | [Link](https://cirolee.github.io/html_css_javascript/tabbar/) | [readme](./tabbar/README.md) |
+| tabbar | [Link](https://cirolee.github.io/html_css_javascript/tabbar/) | [readme](https://github.com/CiroLee/html_css_javascript/blob/main/tabbar/README.md) |
