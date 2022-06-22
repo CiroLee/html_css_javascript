@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --bg-color: #004165;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(73, 222, 255, 0.78) 0%, rgba(42, 203, 146, 0.88) 41.15%, #027D76 100%);
+}
+
+.coupon-box {
+  width: 375px;
+  height: 720px;
+  display: flex;
+  background-color: var(--bg-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.coupon-box::before {
+  content: '';
+  width: 100%;
+  height: 44px;
+  display: block;
+  background: url('./img/iphone-statusbar.svg') center no-repeat;
+  background-size: 100% auto;
+}
+
+.content {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  right: 0;
+  padding: 0 24px;
+}
+
+.nav-header {
+  color: #fff;
+  text-align: center;
+}
+
+.coupons {
+  margin-top: 40px;
+}
+
+.coupon-item {
+  height: 104px;
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* 卡券缺口 */
+.circle::before,
+.circle::after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--bg-color);
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.coupon-item:not(:first-child) {
+  margin-top: 24px;
+}
+
+.coupon-item::before {
+  left: -18px;
+}
+
+.coupon-item::after {
+  right: -18px;
+}
+
+.business-logo {
+  width: 116px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: block;
+}
+
+.mcdonalds {
+  background-image: url('./img/Mcdonalds-icon.svg');
+}
+
+.kfc {
+  background-image: url('./img/kfc-icon.svg');
+}
+
+.starbucks {
+  background-image: url('./img/starbucks-icon.svg');
+}
+
+/* border-image-slice实现自定义边框，之显示右侧 */
+.business-logo::after {
+  content: '';
+  height: 100%;
+  display: block;
+  border: 1px solid transparent;
+  border-image-source: url('./img/cus-dashed.svg');
+  border-image-repeat: repeat;
+  border-image-slice: 0 100% 0 0;
+  position: absolute;
+  right: 0;
+}
+
+.coupon-desc {
+  flex: 1;
+  padding: 0 6px 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub-text {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main .title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 卡券详情 */
+.coupon-detail {
+  height: 450px;
+  margin-top: 38px;
+  border-radius: 12px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.icon {
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+}
+
+.coupon-detail .detail {
+  flex: 1;
+}
+
+
+.coupon-detail.circle::before {
+  bottom: 118px;
+  top: unset;
+  left: -16px;
+}
+
+.coupon-detail.circle::after {
+  bottom: 118px;
+  top: unset;
+  right: -16px;
+}
+
+.coupon-detail .detail .main {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+.coupon-detail .detail .title-box {
+  margin-top: 10px;
+}
+
+.coupon-detail .logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 30px;
+}
+
+.coupon-detail .desc {
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+}
+
+.coupon-detail ul {
+  padding: 0 54px;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.coupon-detail ul li {
+  margin-bottom: 8px;
+}
+
+.coupon-detail .share {
+  height: 150px;
+  position: relative;
+}
+
+.coupon-detail .share::before {
+  content: '';
+  width: 80%;
+  display: block;
+  border: 1px solid transparent;
+  border-image-source: url('./img/cus-dashed-hori.svg');
+  border-image-repeat: repeat;
+  border-image-slice: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.qrcode {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer {
+  width: 100%;
+  bottom: 12px;
+  left: 0;
+  padding: 0 32px;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .icon {
+  font-size: 18px;
+  color: var(--bg-color);
+}
+
+.close-back {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translateX(-50%);
+  display: none;
+  opacity: 0;
+  animation: closeBackShow 0.15s 0.1s ease-in both;
+}
+
+.close-back i {
+  font-size: 28px;
+}
+
+.detail-page {
+  transform: translateX(380px);
+}
+
+
+.hide-to-left {
+  animation: hideToLeft 0.3s ease forwards;
+}
+
+.hide-to-right {
+  animation: hideToRIght 0.3s ease forwards;
+}
+
+.show-from-left {
+  animation: showFromLeft 0.3s ease-in-out forwards;
+}
+
+.show-from-right {
+  animation: showFromRight 0.3s ease-in-out forwards;
+}
+
+@keyframes hideToLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-380px);
+  }
+}
+
+@keyframes hideToRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(380px);
+  }
+}
+
+@keyframes showFromRight {
+  from {
+    transform: translateX(380px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes showFromLeft {
+  from {
+    transform: translateX(-380px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes closeBackShow {
+  to {
+    opacity: 1;
+    margin-top: 24%;
+  }
+}
