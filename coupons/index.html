@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coupons</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <div class="coupon-box">
+    <div id="coupon-list" class="content">
+      <div class="nav-header">My Coupons</div>
+      <div class="coupons">
+        <div class="coupon-item circle" data-id="mcdonalds">
+          <div class="business-logo">
+            <i class="logo mcdonalds"></i>
+          </div>
+          <div class="coupon-desc">
+            <div class="main">
+              <p class="title">$10</p>
+              <p>McDonalds</p>
+            </div>
+            <p class="sub-text">Valid until 01 February 2022</p>
+          </div>
+        </div>
+        <div class="coupon-item circle" data-id="kfc">
+          <div class="business-logo">
+            <i class="logo kfc"></i>
+          </div>
+          <div class="coupon-desc">
+            <div class="main">
+              <p class="title">25% OFF</p>
+              <p>KFC</p>
+            </div>
+            <p class="sub-text">Valid until 02 February 2022</p>
+          </div>
+        </div>
+        <div class="coupon-item circle" data-id="starbucks">
+          <div class="business-logo">
+            <i class="logo starbucks"></i>
+          </div>
+          <div class="coupon-desc">
+            <div class="main">
+              <p class="title">1 Free Coffee</p>
+              <p>Starbucks</p>
+            </div>
+            <p class="sub-text">Valid until 03 February 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="detail-page" class="content detail-page">
+      <div>
+        <div class="coupon-detail circle">
+          <div class="detail">
+            <div class="main">
+              <i class="logo kfc"></i>
+              <div class="title-box">
+                <p class="title">25% OFF</p>
+                <p class="brand">KFC</p>
+              </div>
+            </div>
+            <p class="desc">Get 25% at your next KFC buy </p>
+            <ul>
+              <li>Reedeamble at all restaurants in the UK.</li>
+              <li>Not valid with any other discounts and promotions.</li>
+              <li>No cash value.</li>
+            </ul>
+          </div>
+          <div class="share">
+            <img class="qrcode" src="./img/qrcode.png" alt="qrcode" />
+            <div class="footer">
+              <i class="icon ri-share-box-line"></i>
+              <p class="sub-text">Valid until 03 March 2022</p>
+              <i class="icon ri-error-warning-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="close-back" class="close-back">
+        <i class="ri-close-line"></i>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
