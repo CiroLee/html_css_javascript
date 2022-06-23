@@ -1,4 +1,5 @@
-# keypoints     
+# keypoints    
+设计稿 [Link](https://www.figma.com/file/MjpFBX1neGBlPg11vtfB0W/DAILY-UI-%2361-Redeem-Coupon-(Community))
 
 ## css     
 1. border-image: 允许在元素的边框上绘制图像。这样就可以自定义边框样式，可以自定义图片，渐变色等。[More](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-image);     
