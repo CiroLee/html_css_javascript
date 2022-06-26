@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(141.71deg, rgba(227, 227, 227, 0.74) 0%, rgba(151, 151, 151, 0.53) 100%);
+}
+
+ul, li {
+  padding: 0;
+  list-style: none;
+}
+
+.side-menu {
+  width: 180px;
+  height: 520px;
+  background-color: #057DFC;
+  border-radius: 8px;
+  padding: 10px;
+  position: relative;
+  transition: width 0.2s ease;
+  box-shadow: 3px 4px 16px rgba(4, 106, 214, 0.4);
+  /* position: absolute; */
+}
+
+.menu-item {
+  color: #fff;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  transition: background-color 0.2s linear;
+}
+
+.menu-item i {
+  font-size: 16px;
+}
+.menu-text {
+  margin-left: 8px;
+  transition: opacity 0.1s ease;
+}
+
+.menu-item:hover {
+  background-color: #046FE0;
+}
+/* popover气泡提示 */
+.popover {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 8px);
+  transform:translateY(-50%);
+  display: none;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 8px;
+  color: #333;
+  font-size: 12px;
+  box-shadow: 0px 6px 6px rgb(0 0 0 / 10%);
+}
+/* css三角形: arrow-left */
+.popover::before {
+  content: '';
+  position: absolute;
+  border-width: 6px;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-style: solid;
+  border-right-color: #fff;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+.toogle {
+  position: absolute;
+  width: calc(100% - 20px);
+  padding: 0;
+  bottom: 10px;
+  justify-content: center;
+}
+.toogle i {
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+
+/* collapsible时动效 */
+.side-menu.collapsible {
+  width: 42px;
+}
+.side-menu.collapsible .menu-text {
+  opacity: 0;
+}
+.side-menu.collapsible .toogle i {
+  transform: rotate(180deg);
+}
+.side-menu.collapsible .menu-item:hover .popover {
+  display: inline-block;
+}
