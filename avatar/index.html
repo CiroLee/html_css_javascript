@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>avatars</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h4>基本头像</h4>
+      <div class="row">
+        <div class="avatar xlarge">
+          <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=200" alt="">
+        </div>
+        <div class="avatar large">
+          <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=200" alt="">
+        </div>
+        <div class="avatar medium">
+          <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=200" alt="">
+        </div>
+        <div class="avatar small">
+          <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=200" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <h4>文字和颜色</h4>
+      <div class="row">
+        <div class="avatar xlarge" style="--bg: red">
+          <span>永</span>
+        </div>
+        <div class="avatar large" style="--bg: #33fe7a">
+          <span>永</span>
+        </div>
+        <div class="avatar" style="--bg: #569fda">
+          <span>永</span>
+        </div>
+        <div class="avatar small" style="--bg: #ff7c00">
+          <span>永</span>
+        </div>
+        <div class="avatar small"></div>
+      </div>
+    </div>
+    <div class="box">
+      <h4>头像状态: 在线 下线 通知 选中</h4>
+      <div class="row">
+        <div class="avatar xlarge online">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200" alt="">
+          <div class="dot"></div>
+        </div>
+        <div class="avatar xlarge offline">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200" alt="">
+          <div class="dot"></div>
+        </div>
+        <div class="avatar xlarge notice">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200" alt="">
+          <div class="reddot" data-count="10"></div>
+        </div>
+        <div class="avatar xlarge checked">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200" alt="">
+          <div class="checked">
+            <i class="ri-check-line"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box">
+      <h4>头像组</h4>
+      <div class="row avatar-group">
+        <div class="avatar">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200" alt="">
+        </div>
+        <div class="avatar">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200" alt="">
+        </div>
+        <div class="avatar" style="--bg: #9C27B0">
+          <span>永</span>
+        </div>
+        <div class="avatar"></div>
+      </div>
+    </div>
+    <div class="box">
+      <h4>头像综合运用</h4>
+      <div class="vertical">
+        <div class="card">
+          <div class="avatar online notice">
+            <img src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=200" alt="">
+            <div class="reddot" data-count="3"></div>
+          </div>
+          <div class="content">
+            <p class="title">叉烧包小笼包奶黄包</p>
+            <p>疯狂打码中</p>
+          </div>
+        </div>
+        <div class="card offline">
+          <div class="avatar offline notice">
+            <img src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=200" alt="">
+            <div class="reddot" data-count="3"></div>
+          </div>
+          <div class="content">
+            <p class="title">叉烧包小笼包奶黄包</p>
+            <p>疯狂打码中</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

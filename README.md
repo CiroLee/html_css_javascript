@@ -11,3 +11,4 @@
 | sidemenu | [Link](https://cirolee.github.io/html_css_javascript/sidemenu/) | [readme](https://github.com/CiroLee/html_css_javascript/blob/main/sidemenu/README.md) |
 | switch   | [Link](https://cirolee.github.io/html_css_javascript/switch/)   |                                                                                       |
 | progress | [Link](https://cirolee.github.io/html_css_javascript/progress/)                                                        |                                                                                       |
+| avatar | [Link](https://cirolee.github.io/html_css_javascript/avatar/)                                                        |                                                                                       |
