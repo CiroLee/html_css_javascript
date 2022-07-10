@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <title>calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex-center">
+  <div class="calendar">
+    <header>
+      <div class="button-nav">
+        <button class="prev">
+          <i class="ri-arrow-left-s-line"></i>
+        </button>
+        <button class="next">
+          <i class="ri-arrow-right-s-line"></i>
+        </button>
+      </div>
+      <p id="title"></p>
+      <button id ="today" class="today">今天</button>
+    </header>
+    <div class="week">
+      <li>日</li>
+      <li>一</li>
+      <li>二</li>
+      <li>三</li>
+      <li>四</li>
+      <li>五</li>
+      <li>六</li>
+    </div>
+    <div id="content" class="content">
+      <div id="bg" class="bg flex-center"></div>
+    </div>
+    <!-- <div class="content">
+      <li class="date flex-center no-current">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center no-current">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center active">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center ">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center ">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+
+      <li class="date flex-center">
+        <div class="date-num flex-center">1</div>
+      </li>
+    </div> -->
+  </div>
+</body>
+<script src="index.js"></script>
+</html>

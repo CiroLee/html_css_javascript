@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  height: 100vh;
+  color: #333;
+  background: linear-gradient(225deg, rgba(255, 154, 158, 1) 0%, rgba(250, 208, 196, 1) 99%, rgba(250, 208, 196, 1) 100%);
+}
+
+li {
+  list-style: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  width: 520px;
+  padding: 32px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 2px 12px 24px rgba(0, 0, 0, 0.12);
+}
+.button-nav {
+  display: flex;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-nav button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.button-nav button:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+}
+.button-nav button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+  border-left: 0;
+}
+button {
+  width: 42px;
+  height: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  color: #C9C9C9;
+  background-color: #fff;
+  border: 1px solid currentColor;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:active:not(:disabled) {
+  background-color: rgba(0,0,0,0.06);
+}
+
+button:disabled {
+  background-color: rgba(0,0,0,0.08);
+  cursor: not-allowed;
+  }
+
+  button.today {
+    width: 64px;
+    font-size: 12px;
+  }
+
+  .week {
+    margin-top: 20px;
+    display: flex;
+  }
+  .week li {
+    flex: 1;
+    text-align: center;
+    color: #B3B3B3;
+    font-size: 14px;
+  }
+
+  .content {
+    min-height: 336px;
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    position: relative;
+    z-index: 1;
+  }
+
+  .content .bg {
+    width: 100%;
+    height: 100%;
+    color: #EBEBEB;
+    font-size: 120px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .date {
+    height: 56px;
+    transition: background-color 0.1s ease;
+    cursor: pointer;
+  }
+
+  .date:hover {
+    background: rgba(133, 142, 151, 0.05);
+  }
+
+  .date-num {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  .date.active .date-num {
+    background-color: #117AF2;
+    color: #fff;
+  }
+
+  .date.light {
+    color: #C9C9C9;
+  }
+
+
