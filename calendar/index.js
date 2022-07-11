@@ -102,7 +102,6 @@ function renderCalendar(date = new Date(), create = false) {
   const today = new Date();
   enabledTodatBtn();
   setDateInfo();
-  console.log(calendarData);
   const content = document.getElementById('content');
   // 动态创建标签，初始化时调用
   if (create) {
