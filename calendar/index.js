@@ -45,7 +45,7 @@ generateCalendar = (date) => {
   const { days: lastMonthDays, year: lastMonthYear, month: lastMonth } = getNextOrLastMonthDays(date, 'last');
   const { year: nextMonthYear, month: nextMonth } = getNextOrLastMonthDays(date, 'next');
   // 1号是星期几
-  const weekIndex = new Date(`${currentYear}, ${currentMonth + 1}, 1`).getDay();
+  const weekIndex = new Date(`${currentYear}/${currentMonth + 1}/1`).getDay();
   // 显示在当月末尾的下月天数
   const trailDays = calendarGrid - weekIndex - days;
   let trailVal = 0;
