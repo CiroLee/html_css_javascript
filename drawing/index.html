@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawing</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <canvas id="canvas" class="draw"></canvas>
+  <div id="color-panel" class="color-panel panel">
+    <li data-color="#F50C0C" style="--color: #F50C0C"></li>
+    <li data-color="#FFEB3B" style="--color: #FFEB3B"></li>
+    <li data-color="#43CF7C" style="--color: #43CF7C"></li>
+    <li data-color="#2A82E4" style="--color: #2A82E4"></li>
+    <li data-color="#808080" style="--color: #808080"></li>
+    <li data-color="#000" style="--color: #000"></li>
+  </div>
+  <div class="tools">
+    <li id="color" class="tool-item"  style="--selected-color: #F50C0C">
+      <div class="color"></div>
+    </li>
+    <li id="pencil" class="tool-item active">
+      <i class="ri-pencil-fill"></i>
+    </li>
+    <li id="eraser" class="tool-item">
+      <i class="ri-eraser-fill"></i>
+    </li>
+    <li id="delete" class="tool-item">
+      <i class="ri-delete-bin-fill"></i>
+    </li>
+    <a href="" id="download" download="draw" target="_blank">
+      <li class="tool-item">
+        <i class="ri-download-2-line"></i>
+      </li>
+    </a>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
