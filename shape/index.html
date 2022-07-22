@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shape</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="grid" class="grid-container">
+    <li class="flex-center flex-column">
+      <div class="shape circle"></div>
+      <p class="text">圆形</p>
+    </li>
+    <li class="flex-center flex-column">
+      <div class="shape sector"></div>
+      <p class="text">扇形</p>
+    </li>
+    <li class="flex-center flex-column">
+      <div class="shape ellipse"></div>
+      <p class="text">椭圆</p>
+    </li>
+    <div class="flex-center flex-column">
+      <div class="shape pac-man"></div>
+      <p class="text">吃豆人</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape triangle"></div>
+      <p class="text">正三角形</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape ri-triangle"></div>
+      <p class="text">直角三角形</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape ladder"></div>
+      <p class="text">等腰梯形</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape ri-ladder"></div>
+      <p class="text">直角梯形-1</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape parallelogram"></div>
+      <p class="text">平行四边形</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape rhombus"></div>
+      <p class="text">菱形</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape diamond"></div>
+      <p class="text">钻石</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape star"></div>
+      <p class="text">五角星</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape half-star"></div>
+      <p class="text">半星</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape bevel"></div>
+      <p class="text">斜切角</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape rabbet"></div>
+      <p class="text">正切角</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape hexagon"></div>
+      <p class="text">正六边形</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape cross"></div>
+      <p class="text">十字</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape close"></div>
+      <p class="text">close</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape arrow-left"></div>
+      <p class="text">箭头</p>
+    </div>
+    <div class="flex-center flex-column">
+      <div class="shape tag"></div>
+      <p class="text">标签</p>
+    </div>
+  </div>
+  <div class="side">
+    <div class="range">
+      <input id="range" type="range" min="30" max="120" step="10" value="80">
+      <span>80</span>
+    </div>
+    <div id="color-panel" class="color-panel">
+      <li data-color="#F50C0C" style="--color: #F50C0C"></li>
+      <li data-color="#FFEB3B" style="--color: #FFEB3B"></li>
+      <li data-color="#43CF7C" style="--color: #43CF7C"></li>
+      <li data-color="#2A82E4" style="--color: #2A82E4"></li>
+      <li data-color="#808080" style="--color: #808080"></li>
+      <li data-color="#000" style="--color: #000"></li>
+    </div>
+    <pre id="code">
+      <code></code>
+    </pre>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
