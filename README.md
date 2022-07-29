@@ -1,6 +1,6 @@
 # html_css_javascript
 
-> 使用生动实用的例子, 抛离框架, 适合刚入门的开发者练习。    
+> 使用生动实用的例子, 抛离框架, 适合刚入门的开发者练习。
 
 > Use vivid and practical examples, without frameworks, suitable for developers who are just getting started.
 
@@ -19,6 +19,6 @@
 | canvasBoard | [Link](https://cirolee.github.io/html_css_javascript/drawing/)    |                                                                                         |
 | loading     | [Link](https://cirolee.github.io/html_css_javascript/loading/)    |                                                                                         |
 | shape       | [Link](https://cirolee.github.io/html_css_javascript/shape/)      | [readme](https://github.com/CiroLee/html_css_javascript/blob/main/shape/README.md)      |
-
+| toss_icons  | [Link](https://cirolee.github.io/html_css_javascript/toss_icons/) | [readme](https://github.com/CiroLee/html_css_javascript/blob/main/toss_icons/README.md) |
 
 #### [Bilibili](https://space.bilibili.com/470243907)
