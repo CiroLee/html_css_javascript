@@ -1,0 +1,22 @@
+{
+  "name": "html_css_javascript",
+  "author": "cirolee<ciromail@126.com>",
+  "version": "1.0.0",
+  "description": "使用生动实用的例子, 抛离框架, 适合刚入门的开发者练习。",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CiroLee/html_css_javascript.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "frontend exercises"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CiroLee/html_css_javascript/issues"
+  },
+  "homepage": "https://github.com/CiroLee/html_css_javascript#readme"
+}
