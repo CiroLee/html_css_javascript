@@ -20,5 +20,6 @@
 | loading     | [Link](https://cirolee.github.io/html_css_javascript/loading/)    |                                                                                         |
 | shape       | [Link](https://cirolee.github.io/html_css_javascript/shape/)      | [readme](https://github.com/CiroLee/html_css_javascript/blob/main/shape/README.md)      |
 | toss_icons  | [Link](https://cirolee.github.io/html_css_javascript/toss_icons/) | [readme](https://github.com/CiroLee/html_css_javascript/blob/main/toss_icons/README.md) |
+| clock  | [Link](https://cirolee.github.io/html_css_javascript/clock/) | |
 
 #### [Bilibili](https://space.bilibili.com/470243907)
