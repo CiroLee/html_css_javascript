@@ -38,7 +38,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  animation: two-balls-pink 1.05s ease-in-out infinite
+  animation: two-balls-pink 1.05s ease-in-out infinite;
 }
 
 .two-balls .pink {
@@ -80,61 +80,61 @@ body {
   background-color: #ff4a69;
   left: 15%;
   transform-origin: 50%;
-  animation: balls-circle .5s alternate infinite ease;
+  animation: balls-circle 0.5s alternate-reverse infinite ease;
 }
 
 .three-balls-bounce .shadow {
   width: 20px;
   height: 4px;
   border-radius: 50%;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 62px;
   transform-origin: 50%;
   z-index: -1;
   left: 15%;
   filter: blur(1px);
-  animation: balls-shadow .5s alternate infinite ease;
+  animation: balls-shadow 0.5s alternate-reverse infinite ease;
 }
 .three-balls-bounce .shadow:nth-child(4),
-.three-balls-bounce .circle:nth-child(2){
-  left:45%;
-  animation-delay: .2s;
+.three-balls-bounce .circle:nth-child(2) {
+  left: 45%;
+  animation-delay: 0.2s;
 }
 .three-balls-bounce .shadow:nth-child(5),
-.three-balls-bounce .circle:nth-child(3){
-  left:auto;
-  right:15%;
-  animation-delay: .3s;
+.three-balls-bounce .circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
 }
 
 @keyframes balls-circle {
-  0%{
-      top:60px;
-      height:5px;
-      border-radius: 50px 50px 25px 25px;
-      transform: scaleX(1.7);
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
   }
-  40%{
-      height:20px;
-      border-radius: 50%;
-      transform: scaleX(1);
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
   }
-  100%{
-      top:0%;
+  100% {
+    top: 0%;
   }
 }
 @keyframes balls-shadow {
-  0%{
-      transform: scaleX(1.5);
+  0% {
+    transform: scaleX(1.5);
   }
-  40%{
-      transform: scaleX(1);
-      opacity: .7;
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
   }
-  100%{
-      transform: scaleX(.2);
-      opacity: .4;
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
   }
 }
 
@@ -148,34 +148,34 @@ body {
 }
 
 .four-balls:before,
-.four-balls:after {   
+.four-balls:after {
   border-radius: 50%;
   content: '';
   display: block;
-  height: 20px;  
+  height: 20px;
   width: 20px;
 }
 .four-balls:before {
-  animation: ball1 1s infinite;  
+  animation: ball1 1s infinite;
   background-color: #cb2025;
   box-shadow: 30px 0 0 #f8b334;
   margin-bottom: 10px;
 }
 .four-balls:after {
-  animation: ball2 1s infinite; 
+  animation: ball2 1s infinite;
   background-color: #00a096;
   box-shadow: 30px 0 0 #97bf0d;
 }
 
 @keyframes four-balls-rotate {
-  0% { 
-    transform: rotate(0deg) scale(0.8); 
+  0% {
+    transform: rotate(0deg) scale(0.8);
   }
-  50% { 
-    transform: rotate(360deg) scale(1.2); 
+  50% {
+    transform: rotate(360deg) scale(1.2);
   }
-  100% { 
-    transform: rotate(720deg) scale(0.8); 
+  100% {
+    transform: rotate(720deg) scale(0.8);
   }
 }
 
@@ -186,7 +186,7 @@ body {
   50% {
     box-shadow: 0 0 0 #f8b334;
     margin-bottom: 0;
-    transform: translate(15px,15px);
+    transform: translate(15px, 15px);
   }
   100% {
     box-shadow: 30px 0 0 #f8b334;
@@ -201,7 +201,7 @@ body {
   50% {
     box-shadow: 0 0 0 #97bf0d;
     margin-top: -20px;
-    transform: translate(15px,15px);
+    transform: translate(15px, 15px);
   }
   100% {
     box-shadow: 30px 0 0 #97bf0d;
@@ -235,13 +235,21 @@ body {
 }
 
 @keyframes small-box-ani {
-  0% {transform: scale(0.2);}
-  100% {transform: scale(0.75);}
+  0% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(0.75);
+  }
 }
 
 @keyframes cube-box-ani {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(90deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
 }
 
 /* cube-box loading END */
@@ -257,7 +265,9 @@ body {
 }
 
 @keyframes spin {
-	to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 /* circle loading END */
 
@@ -274,36 +284,36 @@ body {
 }
 
 @keyframes slices {
-	0% {
-		border-top: 24px rgb(255 74 105 / 75%) solid;
-		border-right: 24px rgb(255 74 105 / 25%) solid;
-		border-bottom: 24px rgb(255 74 105 / 25%) solid;
-		border-left: 24px rgb(255 74 105 / 25%) solid;
-	}
-	25% {
-		border-top: 24px rgb(255 74 105 / 25%) solid;
-		border-right: 24px rgb(255 74 105 / 75%) solid;
-		border-bottom: 24px rgb(255 74 105 / 25%) solid;
-		border-left: 24px rgb(255 74 105 / 25%) solid;
-	}
-	50% {
-		border-top: 24px rgb(255 74 105 / 25%) solid;
-		border-right: 24px rgb(255 74 105 / 25%) solid;
-		border-bottom: 24px rgb(255 74 105 / 75%) solid;
-		border-left: 24px rgb(255 74 105 / 25%) solid;
-	}
-	75% {
-		border-top: 24px rgb(255 74 105 / 25%) solid;
-		border-right: 24px rgb(255 74 105 / 25%) solid;
-		border-bottom: 24px rgb(255 74 105 / 25%) solid;
-		border-left: 24px rgb(255 74 105 / 75%) solid;
-	}
-	100% {
-		border-top: 24px rgb(255 74 105 / 75%) solid;
-		border-right: 24px rgb(255 74 105 / 25%) solid;
-		border-bottom: 24px rgb(255 74 105 / 25%) solid;
-		border-left: 24px rgb(255 74 105 / 25%) solid;
-	}
+  0% {
+    border-top: 24px rgb(255 74 105 / 75%) solid;
+    border-right: 24px rgb(255 74 105 / 25%) solid;
+    border-bottom: 24px rgb(255 74 105 / 25%) solid;
+    border-left: 24px rgb(255 74 105 / 25%) solid;
+  }
+  25% {
+    border-top: 24px rgb(255 74 105 / 25%) solid;
+    border-right: 24px rgb(255 74 105 / 75%) solid;
+    border-bottom: 24px rgb(255 74 105 / 25%) solid;
+    border-left: 24px rgb(255 74 105 / 25%) solid;
+  }
+  50% {
+    border-top: 24px rgb(255 74 105 / 25%) solid;
+    border-right: 24px rgb(255 74 105 / 25%) solid;
+    border-bottom: 24px rgb(255 74 105 / 75%) solid;
+    border-left: 24px rgb(255 74 105 / 25%) solid;
+  }
+  75% {
+    border-top: 24px rgb(255 74 105 / 25%) solid;
+    border-right: 24px rgb(255 74 105 / 25%) solid;
+    border-bottom: 24px rgb(255 74 105 / 25%) solid;
+    border-left: 24px rgb(255 74 105 / 75%) solid;
+  }
+  100% {
+    border-top: 24px rgb(255 74 105 / 75%) solid;
+    border-right: 24px rgb(255 74 105 / 25%) solid;
+    border-bottom: 24px rgb(255 74 105 / 25%) solid;
+    border-left: 24px rgb(255 74 105 / 25%) solid;
+  }
 }
 /* slices loading END */
 
