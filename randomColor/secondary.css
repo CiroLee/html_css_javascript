@@ -1,4 +1,4 @@
-.navBar {
+.nav-bar {
     /* display: flex; */
     border: 2px solid black;
     justify-content: center;
@@ -11,11 +11,11 @@ ul {
     align-items: flex-end;
     list-style: none;
 }
-li, a{
+li, a {
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 } 
-.section{
+.section {
     /* margin: 0 auto; */
     margin-top: 50px;
     display: flex;
@@ -23,7 +23,7 @@ li, a{
     align-items: center;
     flex-direction: column;
 }
-.btn{
+.btn {
     margin: 15px;
     /* padding: 15px; */
     font-size: 25px;
