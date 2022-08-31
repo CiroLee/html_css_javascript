@@ -86,15 +86,15 @@ generateCalendar = (date) => {
 };
 // 几个工具函数
 function addClassNames(docNode, classNames) {
-  classNames.split(' ').forEach(c => {
+  classNames.split(' ').forEach((c) => {
     c && docNode.classList.add(c);
-  })
+  });
 }
 
 function removeClassNames(docNode, classNames) {
-  classNames.split(' ').forEach(c => {
+  classNames.split(' ').forEach((c) => {
     c && docNode.classList.remove(c);
-  })
+  });
 }
 // 渲染日历
 function renderCalendar(date = new Date(), create = false) {
@@ -106,14 +106,14 @@ function renderCalendar(date = new Date(), create = false) {
   // 动态创建标签，初始化时调用
   if (create) {
     const fragment = document.createDocumentFragment();
-    calendarData.forEach(item => {
+    calendarData.forEach((item) => {
       const li = document.createElement('li');
       const div = document.createElement('div');
       const isActive = [
         item.day === today.getDate(),
         item.month === today.getMonth(),
         item.year === today.getFullYear(),
-        item.isCurrentMonth
+        item.isCurrentMonth,
       ].every(Boolean);
       const liClass = `date flex-center ${isActive ? 'active' : ''} ${item.isCurrentMonth ? '' : 'light'}`;
       addClassNames(div, 'date-num flex-center');
@@ -124,7 +124,6 @@ function renderCalendar(date = new Date(), create = false) {
     });
 
     content.append(fragment);
-
   } else {
     const children = Array.from(content.children).slice(1);
 
@@ -133,13 +132,13 @@ function renderCalendar(date = new Date(), create = false) {
         item.day === today.getDate(),
         item.month === today.getMonth(),
         item.year === today.getFullYear(),
-        item.isCurrentMonth
+        item.isCurrentMonth,
       ].every(Boolean);
 
       children[index].childNodes[0].innerText = item.day;
       isActive ? addClassNames(children[index], 'active') : removeClassNames(children[index], 'active');
       item.isCurrentMonth ? removeClassNames(children[index], 'light') : addClassNames(children[index], 'light');
-    })
+    });
   }
 }
 
@@ -153,7 +152,7 @@ function changeMonth(type) {
     month = date.getMonth() === 11 ? 0 : date.getMonth() + 1;
     year = month === 0 ? date.getFullYear() + 1 : date.getFullYear();
   }
-
+  date.setDate(1);
   date.setMonth(month);
   date.setFullYear(year);
   renderCalendar(date);
@@ -161,14 +160,15 @@ function changeMonth(type) {
 
 function enabledTodatBtn() {
   const current = new Date();
-  const isToday = date.getFullYear() === current.getFullYear()
-    && date.getMonth() === current.getMonth()
-    && date.getDate() === current.getDate();
-    if (isToday) {
-      document.getElementById('today').setAttribute('disabled', true);
-    } else {
-      document.getElementById('today').removeAttribute('disabled');
-    } 
+  const isToday =
+    date.getFullYear() === current.getFullYear() &&
+    date.getMonth() === current.getMonth() &&
+    date.getDate() === current.getDate();
+  if (isToday) {
+    document.getElementById('today').setAttribute('disabled', true);
+  } else {
+    document.getElementById('today').removeAttribute('disabled');
+  }
 }
 
 function setDateInfo() {
@@ -179,13 +179,17 @@ function setDateInfo() {
 }
 window.onload = function () {
   renderCalendar(date, true);
-}
+};
 
 function changeToToday() {
   date = new Date();
   renderCalendar(date);
 }
 
-document.querySelector('.prev').addEventListener('click', function () { changeMonth('prev') });
-document.querySelector('.next').addEventListener('click', function () { changeMonth('next') });
-document.getElementById('today').addEventListener('click', changeToToday)
+document.querySelector('.prev').addEventListener('click', function () {
+  changeMonth('prev');
+});
+document.querySelector('.next').addEventListener('click', function () {
+  changeMonth('next');
+});
+document.getElementById('today').addEventListener('click', changeToToday);
