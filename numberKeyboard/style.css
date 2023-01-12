@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  --color: #333;
+  --number-btn-bg: #fff;
+  --keyboard-bg: #d9d9d9;
+  --enter-bg: #0ddeb8;
+  --number-active-bg: #e9e9e9;
+  --enter-active-bg: #48f4d5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to top, #a1ffce, #faffd1);
+}
+
+/* phone start */
+.phone {
+  width: 375px;
+  height: 667px;
+  background: #fff;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 2px 2px 26px -8px rgb(104 102 102 / 32%);
+}
+
+.phone__input {
+  width: 80%;
+  height: 38px;
+  border-bottom: 1px solid #1976e1;
+  margin: auto;
+  margin-top: 20%;
+  font-size: 24px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.phone__input::before {
+  content: '￥';
+  font-size: 18px;
+  color: #aaa;
+  position: sticky;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+}
+/* phone end */
+
+/* keyboard start */
+.keyboard {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  padding: 8px;
+  background-color: var(--keyboard-bg);
+}
+
+.keyboard__numbers {
+  font-size: 0;
+}
+
+.keyboard button {
+  width: calc((var(--width) - 18px) / 4);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin: 0 6px 6px 0;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  color: var(--color);
+  font-size: 18px;
+  border-radius: 2px;
+  background-color: var(--number-btn-bg);
+  cursor: pointer;
+}
+
+.keyboard button:active {
+  background-color: var(--number-active-bg);
+}
+
+.keyboard__zero-dot {
+  display: flex;
+}
+.keyboard__zero-dot button {
+  margin-bottom: 0;
+}
+
+.keyboard__zero-dot button:nth-child(1) {
+  flex: 1;
+}
+.keyboard__operate {
+  display: flex;
+  flex-direction: column;
+}
+.keyboard__operate button {
+  font-size: 16px;
+  margin-right: 0;
+}
+.keyboard__operate .enter {
+  flex: 1;
+  margin-bottom: 0;
+  background-color: var(--enter-bg);
+}
+
+.keyboard__operate .enter:active {
+  background-color: var(--enter-active-bg);
+}
+
+.keyboard__operate .delete i {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 414px) {
+  .phone {
+    width: 100%;
+    height: 100vh;
+  }
+}
