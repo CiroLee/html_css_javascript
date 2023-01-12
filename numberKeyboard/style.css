@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   height: 100vh;
   background: linear-gradient(to top, #a1ffce, #faffd1);
+  font-family: 'Noto Serif SC', serif;
 }
 
 /* phone start */
