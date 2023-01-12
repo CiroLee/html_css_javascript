@@ -17,7 +17,7 @@ keyboard.addEventListener('click', function (event) {
     if (num === '.' && input.innerText.includes('.')) {
       return;
     }
-    if (num === '.' && !input.innerText.includes('.')) {
+    if (num === '.' && !input.innerText) {
       input.innerText = '0.';
     } else {
       input.innerText = input.innerText + num;
