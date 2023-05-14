@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+  background: linear-gradient(to right, #fbc7d4, #9796f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* reset button style */
+button {
+  margin: 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+/* 容器 */
+.streamer-btn {
+  --radius: 6px;
+  --angle: 0deg;
+  height: 48px;
+  padding: 0 24px;
+  border-radius: var(--radius);
+  border-radius: var(--radius);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  color: transparent;
+  background-color: #843ded;
+}
+
+/* 承载文字内容 */
+.streamer-btn::before {
+  content: attr(data-text);
+  color: #fff;
+  position: absolute;
+  border-radius: calc(var(--radius) / 2);
+  margin: calc(var(--radius) / 2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6d26d8;
+  transition: all 0.05s ease-in-out;
+  z-index: 2;
+}
+
+/* 模拟流光效果 */
+.streamer-btn::after {
+  content: '';
+  top: 50%;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  width: 300%;
+  height: 300%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.streamer-btn:hover::after {
+  background-image: conic-gradient(#843ded 50deg, #ac8dd9 80deg, #843ded 100deg);
+  animation: streamer 2s linear infinite;
+}
+
+.streamer-btn:active::before {
+  transform: scale(0.99, 0.93);
+  box-shadow: inset 0 0 10px -2px #5e1ebf;
+}
+
+@keyframes streamer {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
