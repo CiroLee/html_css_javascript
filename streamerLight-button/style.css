@@ -66,16 +66,8 @@ button {
   height: 300%;
   position: absolute;
   transform: translate(-50%, -50%);
-}
-
-.streamer-btn:hover::after {
   background-image: conic-gradient(#843ded 50deg, #ac8dd9 80deg, #843ded 100deg);
   animation: streamer 2s linear infinite;
-}
-
-.streamer-btn:active::before {
-  transform: scale(0.99, 0.93);
-  box-shadow: inset 0 0 10px -2px #5e1ebf;
 }
 
 @keyframes streamer {
