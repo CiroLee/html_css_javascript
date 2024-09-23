@@ -4,6 +4,7 @@ body {
   align-items: center;
   justify-content: center;
   background: linear-gradient(to right, #56ccf2, #2f80ed);
+  overflow: hidden;
 }
 .streamer-btn {
   --radius: 6px;
