@@ -1,3 +1,5 @@
+
+
 # html_css_javascript
 
 > 使用生动实用的例子, 抛离框架, 适合刚入门的开发者练习。
@@ -13,7 +15,7 @@
 | sidemenu | [Link](https://cirolee.github.io/html_css_javascript/sidemenu/) | [readme](https://github.com/CiroLee/html_css_javascript/blob/main/sidemenu/README.md) | [CiroLee](https://github.com/CiroLee) |
 | switch | [Link](https://cirolee.github.io/html_css_javascript/switch/) |  | [CiroLee](https://github.com/CiroLee) |
 | progress | [Link](https://cirolee.github.io/html_css_javascript/progress/) |  | [CiroLee](https://github.com/CiroLee) |
-| avatar | [Link](https://cirolee.github.io/html_css_javascript/avatar/) | [readme](https://github.com/CiroLee/html_css_javascript/blob/main/tabbar/README.md) | [CiroLee](https://github.com/CiroLee) |
+| avatar | [Link](https://cirolee.github.io/html_css_javascript/avatar/) | [readme](https://github.com/CiroLee/html_css_javascript/blob/main/avatar/README.md) | [CiroLee](https://github.com/CiroLee) |
 | calendar | [Link](https://cirolee.github.io/html_css_javascript/calendar/) | [readme](https://github.com/CiroLee/html_css_javascript/blob/main/calendar/readme.md) | [CiroLee](https://github.com/CiroLee) |
 | Notes | [Link](https://cirolee.github.io/html_css_javascript/notes/) | [readme](https://github.com/CiroLee/html_css_javascript/blob/main/notes/README.md) | [CiroLee](https://github.com/CiroLee) |
 | canvasBoard | [Link](https://cirolee.github.io/html_css_javascript/drawing/) |  | [CiroLee](https://github.com/CiroLee) |
